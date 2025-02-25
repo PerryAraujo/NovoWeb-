@@ -27,6 +27,7 @@
     box-shadow: 0 4px 8px var(--color-chatbot-shadow);
     transition: background-color 0.3s, transform 0.3s;
     z-index: 1002; 
+    display: none;
 }
 
 #chatbotButton:hover {
@@ -51,6 +52,7 @@
     overflow: hidden;
     z-index: 1001;
     font-family: 'Poppins', sans-serif;
+    display: none;/*resolver depois pricipalmente o desing*/
 }
 
 /* Cabeçalho do Chatbot */

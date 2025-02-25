@@ -125,15 +125,31 @@
             </div>
         </div>
     </div>
-    <div id="successModal" class="modal" style="display: none;">
-      <div class="modal-content success-modal">
-        <span class="close-button" onclick="closeSuccessModal()">&times;</span>
-        <div class="success-icon">✓</div>
-        <h2>Conta criada com sucesso!</h2>
-        <p>Bem-vindo! Sua conta foi criada com sucesso.</p>
-        <button class="submit-button" onclick="closeSuccessModal()">Continuar</button>
-      </div>
+<!-- Modal de sucesso -->
+<div id="successModal" class="modal" style="display: none;">
+  <div class="modal-content success-modal">
+    <span class="close-button" onclick="closeSuccessModal()">&times;</span>
+    <div class="success-icon">✓</div>
+    <h2>Conta criada com sucesso!</h2>
+    <p>Bem-vindo! Sua conta foi criada com sucesso.</p>
+    <button class="submit-button" onclick="closeSuccessModal()">Continuar</button>
+  </div>
+</div>
+</div>
+
+<!-- Modal de Logout -->
+<div id="logoutModal" class="modal" style="display: none;">
+  <div class="modal-content logout-modal">
+    <span class="close-button" onclick="closeLogoutModal()">&times;</span>
+    <div class="logout-icon">⚠</div>
+    <h2>Tem certeza que deseja sair?</h2>
+    <p>Se você sair, precisará fazer login novamente.</p>
+    <div class="modal-buttons">
+      <button id="confirm-logout-button" class="submit-button confirm-logout" onclick="confirmLogout()">Sim, sair</button>
+      <button class="submit-button cancel-logout" onclick="closeLogoutModal()">Cancelar</button>
     </div>
+  </div>
+</div>
 
 
       
@@ -171,7 +187,7 @@
         <section class="about-section">
           <div class="about-left"></div>
           <div class="about-right">
-            <h2>Sobre Nós</h2>
+            <h2>SOBRE NÓS</h2>
             
             <p>
               Na NovoWeb, nossa missão é transformar ideias em experiências
@@ -200,10 +216,10 @@
             <div class="text-content">
               <h1>Agende um Horário</h1>
               <p>
-                Para oferecer um atendimento personalizado, pedimos que nossos clientes agendem um horário. 
-                Assim, garantimos que sua experiência seja excepcional.
+                Agente um horário! <br>
+                para que possamos juntos realizar suas desejos e objetivos!
               </p>
-              <a href="https://wa.me/+5537991382659?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20discutir%20a%20respeito%20do%20site!">Agendar Agora</a>
+              <a href="https://wa.me/+5537991382659?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20discutir%20a%20respeito%20do%20site!">Agendar Agora <i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="image-content">
               <img src="/src/images/Calendario.png" alt="Ilustração de agendamento">
@@ -211,27 +227,33 @@
           </div>
         </div>
 
+
       <!-- Seção Produtos -->
       <section id="produtos">
         <h2>MODELOS<br />DE<br />SITES</h2>
         <div class="produtos-container">
           <div class="produto">
             <img src="src/images/Modelo1.png" alt="Site 1" />
-            <h3>Site Personalizado 1</h3>
-            <div class="preco">R$ 2.000,00</div>
-            <a href="Food.html" target="_blank" class="btn-default">Ver Mais</a>
           </div>
+
           <div class="produto">
-            <img src="src/images/Colares/Lume Collares2.png" alt="Site 2" />
-            <h3>Site Personalizado 2</h3>
-            <div class="preco">R$ 3.000,00</div>
-            <a href="Colares.html" target="_blank" class="btn-default">Ver Mais</a>
+            <img src="src/images/Funo basico de modelos!.png" alt="Site 2" />
           </div>
+
           <div class="produto">
             <img src="src/images/modelo3.png" alt="Site 3" />
-            <h3>Site Personalizado 3</h3>
-            <div class="preco">R$ 4.500,00</div>
-            <a href="carros.html" target="_blank" class="btn-default">Ver Mais</a>
+            </div>
+            <div class="produto">
+              <img src="src/images/Modelo1.png" alt="Site 1" />
+            </div>
+  
+            <div class="produto">
+              <img src="src/images/Funo basico de modelos!.png" alt="Site 2" />
+            </div>
+  
+            <div class="produto">
+              <img src="src/images/modelo3.png" alt="Site 3" />
+              </div>
           </div>
         </div>
       </section>
@@ -351,5 +373,9 @@
     </footer>
     
     <script src="src/JavaScript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
   </body>
 </html>

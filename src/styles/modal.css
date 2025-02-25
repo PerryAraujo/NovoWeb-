@@ -155,6 +155,8 @@ input[type="email"] {
     margin-bottom: 20px;
 }
 
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .modal-content {
@@ -353,3 +355,60 @@ input[type="email"] {
   .option:hover span {
     color: #4caf50;
   }
+
+ /* Estilização do Modal de Logout */
+.logout-modal {
+    text-align: center;
+    padding: 30px;
+}
+
+.logout-icon {
+    font-size: 48px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    background: rgba(255, 204, 0, 0.2);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.confirm-logout {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.confirm-logout:hover {
+    background: darkred;
+}
+
+.cancel-logout {
+    background: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.cancel-logout:hover {
+    background: #666;
+}
